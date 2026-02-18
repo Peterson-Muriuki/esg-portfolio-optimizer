@@ -5,35 +5,35 @@ An end-to-end portfolio optimization system combining alternative data (ESG news
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## 🎯 Features
+## Features
 
-### 📰 Alternative Data
+### Alternative Data
 - Scrapes ESG-related news from Google News RSS feeds
 - NLP sentiment analysis using TextBlob
 - TF-IDF keyword scoring for Environmental, Social, and Governance topics
 - Aggregate sentiment metrics by ticker
 
-### 🤖 Machine Learning
+### Machine Learning
 - Random Forest models for return prediction
 - Technical indicators (momentum, volatility, RSI, MA ratios)
 - Feature engineering from price data
 - Cross-validated forecasts
 
-### 💼 Portfolio Optimization
+### Portfolio Optimization
 - **Markowitz Mean-Variance** (Maximum Sharpe Ratio)
 - **Minimum Variance** Portfolio
 - **Risk Parity** Allocation
 - **Black-Litterman** Model
 - Efficient Frontier visualization
 
-### 📊 Performance Analytics
+### Performance Analytics
 - Sharpe and Sortino ratios
 - Value at Risk (VaR) and Conditional VaR
 - Maximum drawdown analysis
 - Historical backtesting
 - Comparison vs. equal-weight benchmark
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -69,7 +69,7 @@ streamlit run streamlit_app.py
 - The app will automatically open at `http://localhost:8501`
 - If not, manually navigate to that URL
 
-## 📖 Usage
+## Usage
 
 1. **Select Assets**: Choose 5-15 stocks from the sidebar
 2. **Set Date Range**: Define your historical analysis period
@@ -78,7 +78,7 @@ streamlit run streamlit_app.py
 5. **Run Analysis**: Click the "🚀 Run Analysis" button
 6. **Explore Results**: Navigate through the 5 result tabs
 
-## 📁 Project Structure
+## Project Structure
 ```
 esg-portfolio-optimizer/
 │
@@ -105,7 +105,7 @@ esg-portfolio-optimizer/
 └── README.md                  # This file
 ```
 
-## 🛠️ Technologies
+## Technologies
 
 - **Python 3.8+**: Core programming language
 - **Streamlit**: Interactive web dashboard
@@ -116,7 +116,7 @@ esg-portfolio-optimizer/
 - **Pandas & NumPy**: Data manipulation
 - **TextBlob**: NLP sentiment analysis
 
-## 📊 Sample Output
+## Sample Output
 
 The app generates:
 - Interactive price charts
@@ -128,7 +128,7 @@ The app generates:
 - Backtest performance graphs
 - Downloadable CSV/TXT reports
 
-## 🔧 Customization
+## Customization
 
 ### Adding More Tickers
 Edit `streamlit_app.py` line ~90:
@@ -142,7 +142,7 @@ Edit `src/ml_models.py` and replace `RandomForestRegressor` with your preferred 
 ### Adding New Optimization Methods
 Extend `src/portfolio_optimizer.py` with new optimization functions.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 1. Fork the repository
@@ -150,17 +150,17 @@ Contributions are welcome! Please:
 3. Make your changes
 4. Submit a pull request
 
-## 📝 License
+## License
 
 MIT License - see LICENSE file for details
 
-## 🐛 Known Issues
+## Known Issues
 
 - News scraping may be rate-limited by Google
 - ML predictions require sufficient historical data (100+ days)
 - Some optimization methods may fail with highly correlated assets
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Real-time data updates
 - [ ] Additional ML models (LSTM, XGBoost)
@@ -173,8 +173,9 @@ MIT License - see LICENSE file for details
 ## 📧 Contact
 
 For questions or feedback:
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: https://github.com/Peterson-Muriuki
+- Email: pitmuriuki@gmail.com
+- Linkedin: https://www.linkedin.com/in/peterson-muriuki-5857aaa9/
 
 ## 🙏 Acknowledgments
 
