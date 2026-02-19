@@ -4,6 +4,16 @@ An end-to-end portfolio optimization system combining alternative data (ESG news
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![CVXPY](https://img.shields.io/badge/CVXPY-Optimization-2C3E50?style=for-the-badge)
+![yfinance](https://img.shields.io/badge/yfinance-Market%20Data-0A66C2?style=for-the-badge&logo=yahoo&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Array%20Ops-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![TextBlob](https://img.shields.io/badge/TextBlob-NLP-4B8BBE?style=for-the-badge)
+
 
 ## Features
 
