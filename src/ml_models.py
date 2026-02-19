@@ -39,13 +39,13 @@ class ReturnPredictor:
             features[f'{ticker}_rsi'] = 100 - (100 / (1 + rs))
         
         features = features.dropna()
-        print(f"✓ Created {features.shape[1]} features")
+        print(f"Created {features.shape[1]} features")
         return features
     
     def train_model(self, X, y, test_size=0.2):
         """Train Random Forest model"""
         if len(X) < 50:
-            print("⚠ Warning: Limited data for training")
+            print("Warning: Limited data for training")
         
         print(f"\nTraining model with {len(X)} samples...")
         
@@ -74,8 +74,8 @@ class ReturnPredictor:
         train_score = self.model.score(X_train_scaled, y_train)
         test_score = self.model.score(X_test_scaled, y_test)
         
-        print(f"✓ Train R²: {train_score:.4f}")
-        print(f"✓ Test R²: {test_score:.4f}")
+        print(f"Train R²: {train_score:.4f}")
+        print(f"Test R²: {test_score:.4f}")
         
         return train_score, test_score
     
@@ -94,14 +94,14 @@ class ReturnPredictor:
         joblib.dump(self.model, f'{path}rf_model.pkl')
         joblib.dump(self.scaler, f'{path}scaler.pkl')
         joblib.dump(self.feature_names, f'{path}feature_names.pkl')
-        print(f"✓ Model saved to {path}")
+        print(f"Model saved to {path}")
     
     def load_model(self, path='models/saved_models/'):
         """Load trained model"""
         self.model = joblib.load(f'{path}rf_model.pkl')
         self.scaler = joblib.load(f'{path}scaler.pkl')
         self.feature_names = joblib.load(f'{path}feature_names.pkl')
-        print(f"✓ Model loaded from {path}")
+        print(f"Model loaded from {path}")
 
 
 # Test function
@@ -130,4 +130,4 @@ if __name__ == "__main__":
         y_ticker = y[ticker]
         predictor.train_model(X_ticker, y_ticker)
     
-    print("\n✓ Test complete")
+    print("Test complete")

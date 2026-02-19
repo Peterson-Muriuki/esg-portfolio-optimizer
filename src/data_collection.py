@@ -17,7 +17,7 @@ class DataCollector:
             data = yf.download(self.tickers, start=start_date, end=end_date, progress=False)
             
             if data.empty:
-                print("✗ No data returned from yfinance.")
+                print("No data returned from yfinance.")
                 return pd.DataFrame()
 
             if isinstance(data.columns, pd.MultiIndex):
@@ -27,10 +27,10 @@ class DataCollector:
                 if 'Adj Close' in data.columns:
                     prices = data[['Adj Close']].rename(columns={'Adj Close': self.tickers[0]})
                 else:
-                    print("✗ 'Adj Close' not found in downloaded data.")
+                    print("'Adj Close' not found in downloaded data.")
                     return pd.DataFrame()
             
-            print("✓ Price data downloaded successfully")
+            print("Price data downloaded successfully")
             return prices
         except Exception as e:
             print(f"Error downloading data: {e}")
@@ -56,7 +56,7 @@ class DataCollector:
                     'sector': 'Unknown',
                     'industry': 'Unknown'
                 }
-        print("✓ ESG data fetched")
+        print("ESG data fetched")
         return pd.DataFrame(esg_data).T
 
     def scrape_news_headlines(self, ticker, num_articles=10):
@@ -76,10 +76,10 @@ class DataCollector:
                     'published': getattr(entry, 'published', ''),
                     'link': entry.link
                 })
-            print(f"✓ ({len(headlines)} articles)")
+            print(f"({len(headlines)} articles)")
             return pd.DataFrame(headlines)
         except Exception as e:
-            print(f"✗ Error: {e}")
+            print(f"Error: {e}")
             return pd.DataFrame()
 
     def collect_all_news(self):
@@ -94,10 +94,10 @@ class DataCollector:
 
         if all_news:
             result = pd.concat(all_news, ignore_index=True)
-            print(f"\n✓ Total articles collected: {len(result)}")
+            print(f"\nTotal articles collected: {len(result)}")
             return result
         else:
-            print("\n✗ No news collected")
+            print("\nNo news collected")
             return pd.DataFrame()
 
 

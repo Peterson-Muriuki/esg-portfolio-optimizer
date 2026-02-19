@@ -48,9 +48,9 @@ class PortfolioOptimizer:
         )
         
         if result.success:
-            print("✓ Optimization successful")
+            print("Optimization successful")
         else:
-            print("⚠ Optimization warning:", result.message)
+            print("Optimization warning:", result.message)
         
         return result.x
     
@@ -71,13 +71,13 @@ class PortfolioOptimizer:
             prob.solve()
             
             if prob.status == 'optimal':
-                print("✓ Optimization successful")
+                print("Optimization successful")
                 return w.value
             else:
-                print("⚠ Falling back to equal weights")
+                print("Falling back to equal weights")
                 return np.array([1/self.num_assets] * self.num_assets)
         except:
-            print("⚠ Error in optimization, using equal weights")
+            print("Error in optimization, using equal weights")
             return np.array([1/self.num_assets] * self.num_assets)
     
     def risk_parity(self):
@@ -109,9 +109,9 @@ class PortfolioOptimizer:
         )
         
         if result.success:
-            print("✓ Optimization successful")
+            print("Optimization successful")
         else:
-            print("⚠ Optimization warning:", result.message)
+            print("Optimization warning:", result.message)
         
         return result.x
     
@@ -129,7 +129,7 @@ class PortfolioOptimizer:
         pi = risk_aversion * np.dot(self.cov_matrix, market_weights)
         
         # Use equilibrium returns (no views for simplicity)
-        print("✓ Using market equilibrium weights")
+        print("Using market equilibrium weights")
         return market_weights.values
     
     def get_efficient_frontier(self, n_points=30):
@@ -170,7 +170,7 @@ class PortfolioOptimizer:
             except:
                 continue
         
-        print(f"✓ Calculated {len(efficient_portfolios)} frontier points")
+        print(f"Calculated {len(efficient_portfolios)} frontier points")
         return pd.DataFrame(efficient_portfolios)
     
     def calculate_portfolio_metrics(self, weights, risk_free_rate=0.02):
@@ -235,4 +235,4 @@ if __name__ == "__main__":
     for key, value in metrics.items():
         print(f"  {key}: {value:.4f}")
     
-    print("\n✓ Test complete")
+    print("\nTest complete")
