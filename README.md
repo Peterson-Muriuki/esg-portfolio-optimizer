@@ -85,7 +85,7 @@ streamlit run streamlit_app.py
 2. **Set Date Range**: Define your historical analysis period
 3. **Choose Optimization Method**: Select from multiple strategies
 4. **Configure Settings**: Adjust risk-free rate and advanced options
-5. **Run Analysis**: Click the "🚀 Run Analysis" button
+5. **Run Analysis**: Click the "Run Analysis" button
 6. **Explore Results**: Navigate through the 5 result tabs
 
 ## Project Structure
@@ -180,14 +180,14 @@ MIT License - see LICENSE file for details
 - [ ] Multi-period rebalancing simulation
 - [ ] Factor model integration
 
-## 📧 Contact
+## Contact
 
 For questions or feedback:
 - GitHub: https://github.com/Peterson-Muriuki
 - Email: pitmuriuki@gmail.com
 - Linkedin: https://www.linkedin.com/in/peterson-muriuki-5857aaa9/
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Data provided by Yahoo Finance and Google News
 - Built with Streamlit's amazing framework
@@ -195,4 +195,3 @@ For questions or feedback:
 
 ---
 
-**⭐ If you find this project useful, please give it a star on GitHub!**"# esg-portfolio-optimizer" 
